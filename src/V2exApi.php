@@ -1,10 +1,18 @@
 <?php
 
+/*
+ * This file is part of the her-cat/v2ex-api.
+ *
+ * (c) her-cat <hxhsoft@foxmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace HerCat\V2exApi;
 
 use GuzzleHttp\Client;
 use HerCat\V2exApi\Exceptions\HttpException;
-
 
 /**
  * Class V2exApi.
@@ -22,7 +30,7 @@ class V2exApi
     public function __construct()
     {
         $this->setGuzzleOptions([
-            'base_uri' => 'https://www.v2ex.com/api/'
+            'base_uri' => 'https://www.v2ex.com/api/',
         ]);
     }
 
@@ -44,8 +52,8 @@ class V2exApi
 
     /**
      * @param string $api
-     * @param array $params
-     * @param bool $format
+     * @param array  $params
+     * @param bool   $format
      *
      * @return mixed|string
      *
