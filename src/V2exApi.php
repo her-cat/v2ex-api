@@ -121,4 +121,30 @@ class V2exApi
     {
         return $this->request('nodes/show.json', ['name' => $name], $format);
     }
+
+    /**
+     * 根据用户名获取用户信息.
+     *
+     * @param string $username
+     * @param bool   $format
+     *
+     * @return mixed|string
+     */
+    public function getMemberByUsername($username, $format = true)
+    {
+        return $this->request('members/show.json', ['username' => $username], $format);
+    }
+
+    /**
+     * 根据用户 ID 获取用户信息.
+     *
+     * @param integer $id
+     * @param bool    $format
+     *
+     * @return mixed|string
+     */
+    public function getMemberByID($id, $format = true)
+    {
+        return $this->request('members/show.json', ['id' => $id], $format);
+    }
 }

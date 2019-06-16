@@ -84,4 +84,26 @@ class V2exApiTest extends TestCase
 
         $this->assertSame(['success' => true], $api->getNode('python'));
     }
+
+    public function testGetMemberByUsername()
+    {
+        $api = \Mockery::mock(V2exApi::class)->makePartial();
+
+        $api->allows()
+            ->request('members/show.json', ['username' => 'hercat'], true)
+            ->andReturn(['success' => true]);
+
+        $this->assertSame(['success' => true], $api->getMemberByUsername('hercat'));
+    }
+
+    public function testGetMemberByID()
+    {
+        $api = \Mockery::mock(V2exApi::class)->makePartial();
+
+        $api->allows()
+            ->request('members/show.json', ['id' => 336714], true)
+            ->andReturn(['success' => true]);
+
+        $this->assertSame(['success' => true], $api->getMemberByID(336714));
+    }
 }
