@@ -1,0 +1,17 @@
+{
+    "name": "her-cat/v2ex-api",
+    "description": "基于 V2EX API 的 PHP 组件",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "her-cat",
+            "email": "hxhsoft@foxmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "HerCat\\V2ex\\": "src"
+        }
+    }
+}
