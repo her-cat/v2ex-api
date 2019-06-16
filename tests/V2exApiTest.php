@@ -64,4 +64,13 @@ class V2exApiTest extends TestCase
 
         $this->assertSame(['success' => true], $api->getHotTopics());
     }
+
+    public function testGetLatestTopics()
+    {
+        $api = \Mockery::mock(V2exApi::class)->makePartial();
+
+        $api->allows()->request('topics/latest.json', [], true)->andReturn(['success' => true]);
+
+        $this->assertSame(['success' => true], $api->getLatestTopics());
+    }
 }

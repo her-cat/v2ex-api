@@ -92,4 +92,18 @@ class V2exApi
     {
         return $this->request('topics/hot.json', [], $format);
     }
+
+    /**
+     * 获取最新主题
+     *
+     * @param bool $format
+     *
+     * @return mixed|string
+     *
+     * @throws HttpException
+     */
+    public function getLatestTopics($format = true)
+    {
+        return $this->request('topics/latest.json', [], $format);
+    }
 }
