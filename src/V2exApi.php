@@ -40,9 +40,6 @@ class V2exApi
     public function setGuzzleOptions(array $options)
     {
         $this->guzzleOptions = \array_merge($this->guzzleOptions, $options);
-
-
-        var_dump($this->guzzleOptions);
     }
 
     /**
