@@ -80,6 +80,8 @@ class V2exApi
     }
 
     /**
+     * 获取最热主题
+     *
      * @param bool $format
      *
      * @return mixed|string
