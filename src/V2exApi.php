@@ -138,8 +138,8 @@ class V2exApi
     /**
      * 根据用户 ID 获取用户信息.
      *
-     * @param integer $id
-     * @param bool    $format
+     * @param int  $id
+     * @param bool $format
      *
      * @return mixed|string
      */
