@@ -106,4 +106,19 @@ class V2exApi
     {
         return $this->request('topics/latest.json', [], $format);
     }
+
+    /**
+     * 获取节点信息.
+     *
+     * @param string $name
+     * @param bool $format
+     *
+     * @return mixed|string
+     *
+     * @throws HttpException
+     */
+    public function getNode($name, $format = true)
+    {
+        return $this->request('nodes/show.json', ['name' => $name], $format);
+    }
 }

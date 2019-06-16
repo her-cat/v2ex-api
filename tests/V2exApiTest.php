@@ -73,4 +73,15 @@ class V2exApiTest extends TestCase
 
         $this->assertSame(['success' => true], $api->getLatestTopics());
     }
+
+    public function testGetNode()
+    {
+        $api = \Mockery::mock(V2exApi::class)->makePartial();
+
+        $api->allows()
+            ->request('nodes/show.json', ['name' => 'python'], true)
+            ->andReturn(['success' => true]);
+
+        $this->assertSame(['success' => true], $api->getNode('python'));
+    }
 }
