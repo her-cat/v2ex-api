@@ -80,7 +80,7 @@ class V2exApi
     }
 
     /**
-     * 获取最热主题
+     * 获取最热主题.
      *
      * @param bool $format
      *
@@ -94,7 +94,7 @@ class V2exApi
     }
 
     /**
-     * 获取最新主题
+     * 获取最新主题.
      *
      * @param bool $format
      *
