@@ -111,7 +111,7 @@ class V2exApi
      * 获取节点信息.
      *
      * @param string $name
-     * @param bool $format
+     * @param bool   $format
      *
      * @return mixed|string
      *
