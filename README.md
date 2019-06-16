@@ -1,6 +1,6 @@
-<h1 align="center"> /v2ex-api </h1>
+<h1 align="center"> v2ex-api </h1>
 
-<p align="center"> V2EX API 接口[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5D[1;5C基于 [C[C[C[C[C[C[C[C[C[C[C[C基于 V2EX API 的 PHP 组件.</p>
+<p align="center"> :palm_tree: 基于 V2EX API 的 PHP 组件.</p>
 
 
 ## Installing
