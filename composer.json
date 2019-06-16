@@ -8,10 +8,14 @@
             "email": "hxhsoft@foxmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "~5",
+        "mockery/mockery": "^1.2"
+    },
     "autoload": {
         "psr-4": {
-            "HerCat\\V2ex\\": "src"
+            "HerCat\\V2exApi\\": "src"
         }
     }
 }
