@@ -11,7 +11,9 @@
 
 namespace HerCat\V2exApi\Tests;
 
+use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Psr7\Response;
 use HerCat\V2exApi\V2exApi;
 use PHPUnit\Framework\TestCase;
 
@@ -39,5 +41,18 @@ class V2exApiTest extends TestCase
 
         $base_uri = (string) $api->getHttpClient()->getConfig('base_uri');
         $this->assertSame('https://www.v2ex.com/api/', $base_uri);
+    }
+
+    public function testRequest()
+    {
+        $response = new Response(200, [], '{"success": true}');
+
+        $client = \Mockery::mock(Client::class);
+        $client->allows()->get('topics/hot.json', [])->andReturn($response);
+
+        $api = \Mockery::mock(V2exApi::class)->makePartial();
+        $api->allows()->getHttpClient()->andReturn($client);
+
+        $this->assertSame(['success' => true], $api->request('topics/hot.json', [], true));
     }
 }
