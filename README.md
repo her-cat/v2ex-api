@@ -2,6 +2,7 @@
 
 <p align="center"> :palm_tree: 基于 V2EX API 的 PHP 组件.</p>
 
+[![Build Status](https://travis-ci.org/her-cat/v2ex-api.svg?branch=master)](https://travis-ci.org/her-cat/v2ex-api)
 [![StyleCI build status](https://github.styleci.io/repos/192050883/shield)](https://github.styleci.io/repos/192050883)
 
 ## Installing
