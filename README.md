@@ -9,7 +9,7 @@
 ## 安装
 
 ```shell
-$ composer require hercat/v2ex-api -vvv
+$ composer require her-cat/v2ex-api -vvv
 ```
 
 ## 使用
