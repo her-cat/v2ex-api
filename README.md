@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/her-cat/v2ex-api.svg?branch=master)](https://travis-ci.org/her-cat/v2ex-api)
 [![StyleCI build status](https://github.styleci.io/repos/192050883/shield)](https://github.styleci.io/repos/192050883)
+![GitHub](https://img.shields.io/github/license/her-cat/v2ex-api.svg)
 
 ## 安装
 
