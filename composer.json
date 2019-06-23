@@ -17,5 +17,12 @@
         "psr-4": {
             "HerCat\\V2exApi\\": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HerCat\\V2exApi\\ServiceProvider"
+            ]
+        }
     }
 }
